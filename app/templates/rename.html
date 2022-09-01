@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-white">
+  <div class="col-12 p-4 d-flex flex-column position-static">
+    <ul>
+      {% for fileinfo in filenames %}
+      <li>{{ fileinfo[0] }}, {{ fileinfo[1] }}, {{ fileinfo[2] }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+{% endblock %}
